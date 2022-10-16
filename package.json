@@ -1,6 +1,7 @@
 {
-  "name": "@hemjs/types",
-  "version": "0.3.0",
+  "name": "@hemtypes/workspace",
+  "version": "0.0.0",
+  "private": true,
   "description": "Shared TypeScript definitions for hemjs ecosystem",
   "author": "Augustus Kamau",
   "license": "MIT",
@@ -9,14 +10,20 @@
     "typescript",
     "types"
   ],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "prebuild": "rimraf -rf dist",
-    "build:copy-misc": "node ./scripts/copy-misc.js",
-    "build": "tsc -p tsconfig.json && npm run build:copy-misc",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint \"src/**/*.ts\" --fix",
-    "prerelease": "npm run prebuild && npm run build",
-    "release": "release-it"
+    "build": "tsc -b -v packages",
+    "changelog": "lerna-changelog",
+    "clean": "tsc -b --clean packages",
+    "format": "prettier packages/**/*.ts --ignore-path ./.prettierignore --write",
+    "lint": "eslint 'packages/**/*.ts' --fix",
+    "prepublish:npm": "yarn build",
+    "publish:npm": "lerna publish",
+    "prepublish:next": "yarn build",
+    "publish:next": "lerna publish --dist-tag next",
+    "postpublish:npm": "yarn changelog | xclip"
   },
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
@@ -28,10 +35,10 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
     "husky": "8.0.1",
+    "lerna": "6.0.1",
+    "lerna-changelog": "2.2.0",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
-    "release-it": "15.5.0",
-    "rimraf": "3.0.2",
     "typescript": "4.8.4"
   },
   "homepage": "https://github.com/hemjs/types#readme",

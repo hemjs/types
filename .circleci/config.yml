@@ -3,15 +3,23 @@ version: 2
 aliases:
   - &restore-cache
     restore_cache:
-      key: dependency-cache-{{ checksum "package.json" }}
+      name: Restore Yarn Package Cache
+      keys:
+        - yarn-packages-{{ checksum "yarn.lock" }}
   - &install-deps
     run:
-      name: Install dependencies
-      command: npm ci
+      name: Install Dependencies
+      command: yarn install --frozen-lockfile --cache-folder ~/.cache/yarn
   - &build-packages
     run:
       name: Build
-      command: npm run build
+      command: yarn build
+  - &save-cache
+    save_cache:
+      name: Save Yarn Package Cache
+      key: yarn-packages-{{ checksum "yarn.lock" }}
+      paths:
+        - ~/.cache/yarn
 
 jobs:
   build:
@@ -20,21 +28,12 @@ jobs:
       - image: cimg/node:17.9
     steps:
       - checkout
-      - run:
-          name: Update NPM version
-          command: npm install -g npm@latest
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: Install dependencies
-          command: npm ci
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - ./node_modules
+      - *restore-cache
+      - *install-deps
+      - *save-cache
       - run:
           name: Build
-          command: npm run build
+          command: yarn build
 
 workflows:
   version: 2

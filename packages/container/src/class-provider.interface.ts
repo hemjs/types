@@ -1,4 +1,4 @@
-import { NoArgument } from '../core/no-argument.interface';
+import { NoArgument } from './no-argument.interface';
 import { ProviderToken } from './provider-token.interface';
 
 /**

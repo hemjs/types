@@ -1,0 +1,30 @@
+{
+  "name": "@hemtypes/container",
+  "version": "0.3.0",
+  "description": "Shared TypeScript definitions for hemjs ecosystem",
+  "author": "Augustus Kamau",
+  "license": "MIT",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "hemjs",
+    "typescript",
+    "types"
+  ],
+  "devDependencies": {
+    "@types/node": "16.11.65"
+  },
+  "homepage": "https://github.com/hemjs/types#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemjs/types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hemjs/types/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
