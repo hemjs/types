@@ -1,7 +1,7 @@
 {
-  "name": "@hemtypes/middleware",
+  "name": "@hemtypes/handler",
   "version": "0.5.0",
-  "description": "Common type definitions for HTTP server-side middleware",
+  "description": "Common type definitions for HTTP server-side request handler",
   "author": "Augustus Kamau",
   "license": "MIT",
   "types": "./dist/index.d.ts",
@@ -12,7 +12,7 @@
     "hemtypes",
     "typescript",
     "types",
-    "middleware"
+    "handler"
   ],
   "devDependencies": {
     "@types/node": "16.11.66"
