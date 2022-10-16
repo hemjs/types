@@ -1,5 +1,5 @@
 # dependencies
-/node_modules
+node_modules
 
 # IDE
 /.idea
@@ -9,9 +9,11 @@
 # misc
 npm-debug.log
 .DS_Store
+tsconfig.build.tsbuildinfo
+yarn-error.log
 
 # tests
-/coverage
+coverage
 /.nyc_output
 
 # dist

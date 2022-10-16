@@ -1,22 +1,8 @@
-# @hemtypes
+# @hemtypes/container
 
 > Shared TypeScript definitions for hemjs ecosystem.
 
-## Installation (Core)
-
-Using npm:
-
-```sh
-npm install --save-dev @hemtypes/core
-```
-
-or using yarn:
-
-```sh
-yarn add @hemtypes/core --dev
-```
-
-## Installation (Container)
+## Installation
 
 Using npm:
 
