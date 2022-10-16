@@ -1,6 +1,6 @@
 # @hemtypes/middleware
 
-> Standard TypeScript type definitions for HTTP server-side middleware.
+> Common type definitions for HTTP server-side middleware.
 
 ## Installation
 
