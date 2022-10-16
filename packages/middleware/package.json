@@ -1,0 +1,30 @@
+{
+  "name": "@hemtypes/middleware",
+  "version": "0.5.0",
+  "description": "Standard TypeScript type definitions for HTTP server-side middleware",
+  "author": "Augustus Kamau",
+  "license": "MIT",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "hemjs",
+    "typescript",
+    "types"
+  ],
+  "devDependencies": {
+    "@types/node": "16.11.66"
+  },
+  "homepage": "https://github.com/hemjs/types#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemjs/types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hemjs/types/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
