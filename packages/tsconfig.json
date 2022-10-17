@@ -8,9 +8,10 @@
       "path": "./core/tsconfig.build.json"
     },
     {
-      "path": "./middleware/tsconfig.build.json"
-    }, {
-      "path": "./request-handler/tsconfig.build.json"
+      "path": "./handler/tsconfig.build.json"
     },
+    {
+      "path": "./middleware/tsconfig.build.json"
+    }
   ]
 }

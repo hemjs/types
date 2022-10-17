@@ -1,4 +1,4 @@
-# @hemtypes/request-handler
+# @hemtypes/handler
 
 > Common type definitions for HTTP server-side request handler.
 
@@ -7,11 +7,11 @@
 Using npm:
 
 ```sh
-npm install --save-dev @hemtypes/request-handler
+npm install --save-dev @hemtypes/handler
 ```
 
 or using yarn:
 
 ```sh
-yarn add @hemtypes/request-handler --dev
+yarn add @hemtypes/handler --dev
 ```
