@@ -1,0 +1,31 @@
+{
+  "name": "@hemtypes/http-adapter",
+  "version": "0.1.0",
+  "description": "Common type definitions for HTTP adapter",
+  "author": "Augustus Kamau",
+  "license": "MIT",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "hemtypes",
+    "typescript",
+    "types",
+    "http-adapter"
+  ],
+  "devDependencies": {
+    "@types/node": "16.11.66"
+  },
+  "homepage": "https://github.com/hemjs/types#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemjs/types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hemjs/types/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
