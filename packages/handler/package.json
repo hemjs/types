@@ -15,7 +15,7 @@
     "handler"
   ],
   "devDependencies": {
-    "@types/node": "16.11.66"
+    "@types/node": "16.11.68"
   },
   "homepage": "https://github.com/hemjs/types#readme",
   "repository": {
