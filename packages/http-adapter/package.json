@@ -15,7 +15,7 @@
     "http-adapter"
   ],
   "devDependencies": {
-    "@types/node": "18.11.5"
+    "@types/node": "18.11.6"
   },
   "homepage": "https://github.com/hemjs/types#readme",
   "repository": {
