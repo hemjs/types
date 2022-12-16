@@ -1,6 +1,6 @@
 {
   "name": "@hemtypes/handler",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Common type definitions for HTTP server-side request handler",
   "author": "Augustus Kamau",
   "license": "MIT",

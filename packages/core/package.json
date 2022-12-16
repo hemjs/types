@@ -1,6 +1,6 @@
 {
   "name": "@hemtypes/core",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Shared TypeScript definitions for hemjs ecosystem",
   "author": "Augustus Kamau",
   "license": "MIT",
