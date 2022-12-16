@@ -25,7 +25,7 @@ jobs:
   build:
     working_directory: ~/hemjs
     docker:
-      - image: cimg/node:17.9
+      - image: cimg/node:19.2
     steps:
       - checkout
       - *restore-cache
