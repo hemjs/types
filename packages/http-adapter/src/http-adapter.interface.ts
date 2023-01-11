@@ -1,6 +1,6 @@
 export type PathArgument = string | RegExp | (string | RegExp)[];
 
-export type NextFunction = (err?: any) => void;
+export type NextFunction = (error?: Error | any) => void;
 
 export type ErrorHandler = <TRequest = any, TResponse = any>(
   error: any,
