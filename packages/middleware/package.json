@@ -1,6 +1,6 @@
 {
   "name": "@hemtypes/middleware",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "Common type definitions for HTTP server-side middleware",
   "author": "Augustus Kamau",
   "license": "MIT",
