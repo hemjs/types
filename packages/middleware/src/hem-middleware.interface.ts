@@ -5,7 +5,7 @@
  * by acting on the request, generating the response, or forwarding the
  * request to a subsequent middleware and possibly acting on its response.
  */
-export interface Middleware<TRequest = any, TResponse = any> {
+export interface HemMiddleware<TRequest = any, TResponse = any> {
   /**
    * Process an incoming server request.
    * @param req the HTTP request argument to the middleware function

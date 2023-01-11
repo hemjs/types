@@ -1,1 +1,1 @@
-export * from './middleware.interface';
+export * from './hem-middleware.interface';
