@@ -14,6 +14,6 @@ export interface HemHandler<TRequest = any, TResponse = any> {
   handle(
     req: TRequest,
     res: TResponse,
-    next: (error?: Error | any) => void,
+    next?: (error?: Error | any) => void,
   ): any;
 }
